@@ -19,7 +19,7 @@ function MealDetailScreen({ route, navigation }) {
 
   const selectedMeal = MEALS.find((meal) => meal.id === mealId)
 
-  const mealIsFavorite = favoriteMealIds.ids.includes(mealId)
+  const mealIsFavorite = favoriteMealIds.includes(mealId)
 
   function changeFavoriteStatusHandler() {
     if (mealIsFavorite) {
