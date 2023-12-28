@@ -46,7 +46,7 @@ function MealDetailScreen({ route, navigation }) {
   }, [navigation, changeFavoriteStatusHandler])
   return (
     <ScrollView style={styles.rootContainer}>
-      <Image style={styles.image} source={{ uri: selectedMeal.imageUrl }} />
+      <Image style={styles.image} source={selectedMeal.imageUrl} />
       <Text style={styles.title}>{selectedMeal.title}</Text>
       <MealDetails
         duration={selectedMeal.duration}
